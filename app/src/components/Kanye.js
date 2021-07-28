@@ -3,9 +3,8 @@ import kanye from "../assets/Kanye_West.jpeg";
 import { connect } from "react-redux";
 import { getQuote } from "../actions/quotesActions";
 
-
 const Kanye = (props) => {
-  const { quote, isFetching, error, getQuote} = props;
+  const { quote, isFetching, error, getQuote } = props;
 
   useEffect(() => {
     props.getQuote();
@@ -28,10 +27,14 @@ const Kanye = (props) => {
   return (
     <div>
       <h1>WHAT WOULD KANYE SAY?</h1>
-      <p>This is Kanye West. He says a lot of wacky stuff.</p>
+      <h2>This is Kanye West. He says a lot of wacky stuff.</h2>
+      <h2>Wanna see some 💩?</h2>
       <img src={kanye} style={{ width: "150px" }} />
-      <p>Wanna see some 💩?</p>
-      <button className="btn" onClick={handleClick}>WWKS?</button>
+      <div>
+        <button className="btn" onClick={handleClick}>
+          CLICK ME
+        </button>
+      </div>
       <p id="quote">{quote}</p>
     </div>
   );

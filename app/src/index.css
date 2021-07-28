@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/kanye_background.jpeg");
+  background-image: url("../src/assets/background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,6 +15,11 @@ body {
 
 p {
   color: black;
+  padding: 10px;
+}
+
+h1, h2 {
+  color:rgb(217, 224, 250);
 }
 
 #quote {
@@ -25,7 +30,7 @@ p {
   
     display: block;
     position: relative;
-    border: solid 3px #6e7491;
+    border: solid 3px #123907;
     padding: 40px 60px;
     max-width: 800px;
     width: 70%;
@@ -36,7 +41,7 @@ p {
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
     transition: all 0.13s ease-in;
 
-    background-color:beige;
+    background-color:rgb(116, 152, 196);
 }
 
 #quote:hover {
@@ -52,13 +57,14 @@ code {
 .btn{
   display: inline-block;
   text-decoration: none;
-  background-color: beige;
-  color: #593107;
+  background-color: rgb(116, 152, 196);
+  color: black;
+  margin-top: 40px;
   width: 120px;
   height: 120px;
   line-height: 120px;
   border-radius: 50%;
-  border: double 4px #613009;
+  border: double 4px #123907;;
   text-align: center;
   vertical-align: middle;
   overflow: hidden;
